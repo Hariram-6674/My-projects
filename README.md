@@ -1,1 +1,1 @@
-All capstone project for web dev
+All my trial projects
