@@ -5,39 +5,162 @@
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <meta name="author" content="Hariram">
     <link rel="icon" href="./assets/download.png" type="image/x-icon">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
     <title>Online Resume</title>
 </head>
 <body>
+    <header>
     <h1>Hariram</h1>
     <img src="./assets/hari photo 2020.jpg" height="200">
     <h2>Summary</h2>
     <p>I am a hardworking and dedicated individual with experience in customer service and administration.</p>
+    <h3><mark>Index</mark></h3>
+    <nav aria-label="primary-navigation"><ol>
+        <li><a href="#Education">Education</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Certificates">Certificates</a></li>
+        <li><a href="#other">Other</a></li>
+    </ol>
+    </nav>
+    </header>
     <hr>
+    <main>
+    <article id="Education">
     <h2>Education</h2>
     <ul>
         <p>The Millenium school</p>
         <li>10th : 89%</li>
         <li>12th : 93%</li>
-        <p>Vellore Institue of Technology</p>
-        <li>Btech computer science 3rd year on going</li>
+        <p><abbr title="Vellore Institute of Technologies">VIT</abbr></p>
+        <li>Btech computer science <time datetime="2023-08-06">3rd year</time>  on going</li>
     </ul>
+    </article>
     <hr>
     <h2>Work Experience</h2>
-    <li>none till now</li>
+    <aside>
+        <details>
+            <summary>All the companies i worked in: -</summary>
+            <p1>None till now &#x1F622</p1>
+        </details>
+    </aside>
+    <aside>
+        <details>
+            <summary>All the internships: -</summary>
+            <p1>None till now &#x1F622</p1>
+        </details>
+    </aside>
+    <aside>
+        <details>
+            <summary>All the project: -</summary>
+            <ol>
+                <li>Online portfolio using html and css</li>
+            </ol>
+        </details>
+    </aside>
     <hr>
+    <section id="Skills">
     <h2>Skills</h2>
-    <p>Team work: &#11088&#11088&#11088&#11088&#11088</p>
-    <p>Organizational skill: &#11088&#11088&#11088&#11088</p>
+    <table>
+        <thead>
+        <caption>All Skills</caption>
+        <tr>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th id="skills" scope="col">Skills</th>
+            <th id="ratings" scope="col">Ratings</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td rowspan="3">For office</td>
+        </tr>
+            <th id="1st" scope="row">1)</th>
+            <td>Team Work</td>
+            <td>&#11088&#11088&#11088&#11088&#11088</td>
+        </tr>
+        <tr>
+            <th id="2nd" scope="row">2)</th>
+            <td>Organizational skill</td>
+            <td>&#11088&#11088&#11088&#11088</td>
+        </tr>
+        </tbody>
+    </table>
+    </section>
     <hr>
+    <section id="Certificates">
     <h2>Certificates</h2>
     <p>Ethical hacking course:</p>
-    <img src="./assets/Ethical Hacking (1).jpg" height="300">
+    <figure>    <img src="./assets/Ethical Hacking (1).jpg" height="300" title="Certificate" loading="lazy">
+        <figcaption>NPTEL Certificate</figcaption>
+    </figure>
+    <p>To download the certificate, <a href="./assets/Ethical Hacking (1).jpg" download>click here.</a></p>
+    </section>
+    </main>
     <hr>
+    <section id="other">
     <h2>Other</h2>
     <ul>
-        <a href="./assets/about.html">More information</a><br>
-        <a href="./assets/contact.html">Contact information</a>
+        <a href="./assets/about.html" target="_blank">More information</a><br>
+        <a href="./assets/contact.html" target="_blank">Contact information</a>
     </ul>
-    <footer><p>© Hariram. All rights reserved.</p></footer>
+    </section>
+    <article id="suggestion">
+        <p>Give more suggestions through this form!! click the arrow</p>
+        <details>
+            <summary>Form</summary>
+            <form action="https://httpbin.org/get" method="get">
+            <fieldset>
+            <legend>Your information</legend>
+                <label for="firstname">First name:</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Eg:max" required autocomplete="on" autofocus><br>
+                <label for="lastname">Last name:</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Eg:Holder" autocomplete="on"><br>
+                <label for="mailid">Email:</label>
+                <input type="email" name="mailid" id="mailid" placeholder="Eg:abc@gmail.com" required autocomplete="on"><br>
+                <label for="phone">Phone number:</label>
+                <input type="tel" name="phone" id="phone" placeholder="Eg:+91-9363532594" required autocomplete="on" pattern="+[0-9]{2}-[0-9]{10}"><br>
+                <label for="age">Age:</label>
+                <input type="number" name="age" id="age" placeholder="Eg:20" autocomplete="on" min="10" max="100" step="1"><br>
+                <label for="box">Country:</label>
+                <select name="box" id="box" multiple size="4">
+                    <optgroup label="Countries">
+                    <option value="india" selected>India</option>
+                    <option value="america">USA</option>
+                    <option value="dubai">UAE</option>
+                    <option value="saudi">Saudi</option>
+                    </optgroup>
+                </select><br>
+                <label for="religion">Religion:</label>
+                <input type="text" name="religion" id="religion" list="religions">
+                <datalist id="religions">
+                    <option value="hindu">Hindu</option>
+                    <option value="christian">Christian</option>
+                    <option value="muslim">Muslim</option>
+                </datalist>
+            </fieldset>
+            <fieldset>
+                <legend>Do you know HTML5??</legend>
+                <!-- for chekbox put checkbox in tyoe -->
+                <input type="radio" name="doesheknow" id="yes" value="yes">
+                <label for="yes">Yes</label>
+                <br>
+                <input type="radio" name="doesheknow" id="no" value="no">
+                <label for="no">No</label>
+            </fieldset>
+            <fieldset>
+                <legend>For more suggestions!!</legend>
+                <textarea name="suggestions" id="suggestions" cols="30" rows="10" placeholder="Type your message here"></textarea>
+            </fieldset>
+            <br>
+            <!-- post for secrecy and submit will show sensitive info in url -->
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+            </form>
+        </details>
+    </article>
+    <hr>
+    <footer><p>&copy;All rights reserved.</p>
+    <a href="#">Click to go to starting page</a>
+    </footer>
 </html>
